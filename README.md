@@ -43,12 +43,11 @@ Para integrar PayPal en tu aplicación, necesitas generar credenciales API:
 
 1. **Clona el repositorio**
    ```bash
-   git clone https://github.com/tu-repo/paypal-integration-mvc.git
-   cd paypal-integration-mvc
+   git clone [https://github.com/tu-repo/paypal-integration-mvc.git](https://github.com/DavidNva/IntegracionPayPal_con_ASP.NET_MVC)
    ```
 
 2. **Abrir en Visual Studio IDE**  
-   - Abre el archivo `PaypalIntegration.sln` en Visual Studio.
+   - Abre el archivo `paypalTest.sln` en Visual Studio IDE.
 
 3. **Configurar credenciales de PayPal**  
    - En el archivo `appsettings.json` o `Web.config`, agrega las credenciales obtenidas en PayPal:
