@@ -43,7 +43,7 @@ Para integrar PayPal en tu aplicación, necesitas generar credenciales API:
 
 1. **Clona el repositorio**
    ```bash
-   git clone [https://github.com/tu-repo/paypal-integration-mvc.git](https://github.com/DavidNva/IntegracionPayPal_con_ASP.NET_MVC)
+   git clone https://github.com/DavidNva/IntegracionPayPal_con_ASP.NET_MVC
    ```
 
 2. **Abrir en Visual Studio IDE**  
@@ -70,54 +70,6 @@ Para integrar PayPal en tu aplicación, necesitas generar credenciales API:
 5. **Ejecutar la aplicación**  
    - Presiona `F5` o ejecuta en Visual Studio.
    - Accede a `http://localhost:5000` o a la URL o puerto correspondiente para ver la aplicación en acción.
-
----
-
-## 🔄 Flujo de Pago con PayPal
-
-1. **El usuario selecciona un producto y procede al pago.**
-2. **El sistema crea una orden en PayPal usando la API.**
-3. **Se redirige al usuario a PayPal para completar el pago.**
-4. **PayPal procesa la transacción y redirige de vuelta a la aplicación.**
-5. **La aplicación valida la respuesta y actualiza el estado del pago.**
-
----
-
-## 📌 Implementación en Código
-
-### 1️⃣ Modelo de Orden (`PayPalOrderModel.cs`)
-```csharp
-public class PayPalOrderModel {
-    public string Intent { get; set; } = "CAPTURE";
-    public Payer Payer { get; set; }
-    public List<Transaction> Transactions { get; set; }
-}
-```
-
-### 2️⃣ Controlador de Pago (`PayPalController.cs`)
-```csharp
-[HttpPost]
-public async Task<IActionResult> CreateOrder() {
-    var request = new HttpRequestMessage(HttpMethod.Post, "https://api.sandbox.paypal.com/v2/checkout/orders");
-    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", await GetAccessToken());
-    request.Content = new StringContent(JsonConvert.SerializeObject(order), Encoding.UTF8, "application/json");
-
-    var response = await _httpClient.SendAsync(request);
-    var content = await response.Content.ReadAsStringAsync();
-    return Ok(JsonConvert.DeserializeObject(content));
-}
-```
-
-### 3️⃣ Captura del Pago (`CaptureOrder`)
-```csharp
-public async Task<IActionResult> CaptureOrder(string orderId) {
-    var request = new HttpRequestMessage(HttpMethod.Post, $"https://api.sandbox.paypal.com/v2/checkout/orders/{orderId}/capture");
-    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", await GetAccessToken());
-    
-    var response = await _httpClient.SendAsync(request);
-    return Ok(await response.Content.ReadAsStringAsync());
-}
-```
 
 ---
 
