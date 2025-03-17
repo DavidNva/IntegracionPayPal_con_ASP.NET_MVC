@@ -10,8 +10,7 @@ Antes de comenzar, asegúrate de tener lo siguiente:
 
 - Visual Studio 2019 o superior
 - .NET Framework 4.7.2
-- Cuenta de desarrollador en [PayPal Developer](https://developer.paypal.com/){:target="_blank"}.
--    - Accede a [PayPal Developer](https://developer.paypal.com/){:target="_blank"}.
+- Cuenta de desarrollador en [PayPal Developer](https://developer.paypal.com/)
 - Postman (opcional, para probar llamadas a la API de PayPal)
 ---
 
@@ -105,6 +104,6 @@ Esta integración se puede aplicar en otros proyectos con pequeñas modificacion
 
 ## 📌 Recursos Adicionales
 
-- [Documentación oficial de PayPal API](https://developer.paypal.com/docs/api/overview/){:target="_blank"}.
+- [Documentación oficial de PayPal API](https://developer.paypal.com/docs/api/overview/)
 ---
 
