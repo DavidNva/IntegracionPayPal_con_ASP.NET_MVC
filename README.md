@@ -12,6 +12,11 @@ Antes de comenzar, asegúrate de tener lo siguiente:
 - .NET Framework 4.7.2
 - Cuenta de desarrollador en [PayPal Developer](https://developer.paypal.com/)
 - Postman (opcional, para probar llamadas a la API de PayPal)
+---
+
+## Arquitectura del Proyecto
+
+![Integracion PayPal_Con_ASP NET_MCV](https://github.com/user-attachments/assets/cc29e72a-3fe2-4eb0-9347-11c31a0acf69)
 
 ---
 
@@ -34,7 +39,7 @@ Para integrar PayPal en tu aplicación, necesitas generar credenciales API:
 
 ---
 
-## 🏗️ Instalación del Proyecto
+## Instalación del Proyecto
 
 1. **Clona el repositorio**
    ```bash
@@ -149,9 +154,5 @@ Esta integración se puede aplicar en otros proyectos con pequeñas modificacion
 ## 📌 Recursos Adicionales
 
 - [Documentación oficial de PayPal API](https://developer.paypal.com/docs/api/overview/)
-- [Ejemplo de integración en ASP.NET MVC](https://github.com/paypal/PayPal-NET-SDK)
-
 ---
-
-💡 **¿Preguntas o mejoras? Contribuye al proyecto o abre un issue en GitHub.** 🚀
 
