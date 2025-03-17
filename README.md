@@ -69,7 +69,7 @@ Para integrar PayPal en tu aplicación, necesitas generar credenciales API:
 
 5. **Ejecutar la aplicación**  
    - Presiona `F5` o ejecuta en Visual Studio.
-   - Accede a `http://localhost:5000` para ver la aplicación en acción.
+   - Accede a `http://localhost:5000` o a la URL o puerto correspondiente para ver la aplicación en acción.
 
 ---
 
