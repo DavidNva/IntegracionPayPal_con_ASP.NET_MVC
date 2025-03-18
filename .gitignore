@@ -1,0 +1,60 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# User-specific files
+.idea/
+.vs/
+.vscode/
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# User-specific files
+.idea/
+.vs/
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# User-specific files
+.idea/
+.vs/
+.vscode/
+# User-specific files
+.idea/
+.vs/
+.vscode/
+# User-specific files
+.idea/
+.vs/
+.vscode
+
+
+
+bin/
+debug/
